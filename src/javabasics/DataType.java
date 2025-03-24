@@ -15,16 +15,20 @@ public class DataType {
 		try {
 			// Try to parse the input as a long (largest primitive integer type)
 			long number =Long.parseLong(input);
+		
 			if (number>=Byte.MIN_VALUE && number<=Byte.MAX_VALUE) {
 				logger.info("the number is a byte");
+				System.out.println();
 			}
 			if (number>=Short.MIN_VALUE && number<=Short.MAX_VALUE) {
 				logger.info("the number is a Short");
 			}
 			if (number>=Integer.MIN_VALUE && number<=Integer.MAX_VALUE) {
+				System.out.println(Integer.MIN_VALUE);
 				logger.info("the number is a Integer");
 			}
 			if (number>=Long.MIN_VALUE && number<=Long.MAX_VALUE) {
+				System.out.println(Long.MIN_VALUE);
 				logger.info("the number is a Long");
 			}
 		}

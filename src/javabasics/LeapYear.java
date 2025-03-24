@@ -21,6 +21,7 @@ public static void main(String[] args) {
 	int year = scanner.nextInt();
 	LeapYear leapyearObj = new LeapYear();
 	leapyearObj.leapyear(year);
+	scanner.close();
 	
 }
 }
